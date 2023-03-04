@@ -10,7 +10,7 @@ export const getAllStories = async (req, res) => {
         res.json(stories.data.map(item => ({ name: item.name })))
     } catch (error) {
         console.log(`Error on getAllStories: ${error}`)
-        res.send(200).json({
+        res.sendStatus(200).json({
             message: 'An error accour',
             error
         })
