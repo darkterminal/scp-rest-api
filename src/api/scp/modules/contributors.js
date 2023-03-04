@@ -7,7 +7,7 @@ export const getAllContributors = async (req, res) => {
             repo: process.env.GITHUB_REPO
         })
     
-        res.sendStatus(200).json({
+        res.json({
             message: 'Fetch all contributors',
             data: {
                 total_contributors: contributors.data.length,
@@ -20,7 +20,7 @@ export const getAllContributors = async (req, res) => {
         })
     } catch (error) {
         console.log(`Error on getAllContributors: ${error}`)
-        res.sendStatus(501).json({
+        res.json({
             message: 'An error accour',
             error
         })
