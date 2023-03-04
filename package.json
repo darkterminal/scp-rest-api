@@ -21,6 +21,9 @@
     "type": "git",
     "url": "https://github.com/darkterminal/express-api-starter.git"
   },
+  "engines": {
+    "node": ">14 <18"
+  },
   "license": "MIT",
   "dependencies": {
     "@octokit/rest": "^19.0.7",
