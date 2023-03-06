@@ -1,6 +1,6 @@
 import express from 'express'
 import { getAllContributors } from './modules/contributors'
-import { getAllStories } from './modules/collections'
+import { getAllStories, getStory } from './modules/collections'
 
 const router = express.Router()
 
@@ -12,5 +12,6 @@ router.get('/', (req, res) => {
 
 router.get('/contributors', getAllContributors)
 router.get('/stories', getAllStories)
+router.get('/story/:language', getStory)
 
 export default router

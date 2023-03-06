@@ -73,3 +73,8 @@ typings/
 
 # Serverless directories
 .serverless
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

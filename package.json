@@ -22,7 +22,7 @@
     "url": "https://github.com/darkterminal/express-api-starter.git"
   },
   "engines": {
-    "node": ">14 <18"
+    "node": "16.16.0"
   },
   "license": "MIT",
   "dependencies": {
@@ -30,7 +30,9 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "gray-matter": "^4.0.3",
     "helmet": "^4.6.0",
+    "lodash": "^4.17.21",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
